@@ -1,0 +1,87 @@
+{
+  "name": "O2C_GoldenDemo_TestAutomation",
+  "description": "Test Automation Project",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Mail.Activities": "[1.22.1]",
+    "UiPath.OpenAI.IntegrationService.Activities": "[6.1.0]",
+    "UiPath.ServiceNow.Activities": "[2.0.0-preview]",
+    "UiPath.ServiceNow.IntegrationService.Activities": "[5.2.0]",
+    "UiPath.System.Activities": "[23.4.3]",
+    "UiPath.Testing.Activities": "[23.4.1]",
+    "UiPath.UIAutomation.Activities": "[23.4.8]",
+    "UiPathTeam.Interactive.Activities": "[1.5.6.9]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.4.4.0",
+  "projectVersion": "1.0.163417235",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "8ad1a877-62d7-4b9d-bbcc-32f9d7ae4c62",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "7b3b8868-1188-440b-b3b8-d7aa92860868",
+        "testCaseType": "TestCase",
+        "fileName": "O2CGD_OpenAI.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "538ee8f7-2c91-4203-8aaa-67fc247e5949",
+        "testCaseType": "TestCase",
+        "fileName": "O2CGD_SAP_Login.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "03e6cc6b-60fa-4a06-b92e-f121a7db4d64",
+        "testCaseType": "TestCase",
+        "fileName": "O2CGD_SAP_Logout.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "bea6d6d8-ec5c-4eb0-83f3-24aa137d40e1",
+        "testCaseType": "TestCase",
+        "fileName": "O2CGD_ServiceNow.xaml"
+      }
+    ],
+    "modernBehavior": true
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

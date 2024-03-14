@@ -1,0 +1,25 @@
+{
+    "comments": [
+      {
+        "id": "<id>",
+        "messages": [
+          {
+            "body": {
+              "text": "<body>"
+            },
+            "from": "<from>",
+            "sent_at": "<timestamp>",
+            "subject": {
+              "text": "<subject>"
+            },
+            "to": [
+              "andu.morie@uipath.com"
+            ]
+          }
+        ],
+        "timestamp": "<timestamp>",
+        "user_properties": {
+        }
+      }
+    ]
+}

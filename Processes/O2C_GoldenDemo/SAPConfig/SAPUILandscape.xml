@@ -1,0 +1,2 @@
+﻿<?xml version="1.0"?>
+<Landscape><Workspaces><Workspace uuid="d90b6bed-28b9-4fc4-b25b-e82d50829321" name="Local"><Item uuid="06791c99-e41c-4e9d-8031-b16300a018fe" serviceid="18e61679-c201-4b9f-9959-07122b1af943"/></Workspace></Workspaces><Services><Service type="SAPGUI" uuid="18e61679-c201-4b9f-9959-07122b1af943" name="SAP S4 HANA 1909" systemid="S4H" mode="1" server="20.16.188.67:3250" sncop="-1" clocale="EN" dcpg="2"/></Services></Landscape>
