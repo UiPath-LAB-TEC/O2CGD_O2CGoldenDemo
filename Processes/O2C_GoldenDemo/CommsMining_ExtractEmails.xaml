@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1231,4784</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1225.6,4786.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>CM_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -124,7 +124,7 @@
       <AssemblyReference>UiPathTeam.Interactive.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="CM" sap:VirtualizedContainerService.HintSize="732,4719" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="CM" sap:VirtualizedContainerService.HintSize="732.8,4721.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="commsMiningApiKey" />
       <Variable x:TypeArguments="x:String" Name="commsMiningEndpoint" />
@@ -151,15 +151,15 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uia:DisplayMessage Handle="{x:Null}" BackColor="Green" DisplayName="Display Message - Outlook" FontSize="17" ForeColor="white" Hide="7000" sap:VirtualizedContainerService.HintSize="670,124" sap2010:WorkflowViewState.IdRef="DisplayMessage_1" Message="Parsing Outlook emails and storing attached files." NewStyle="True" Position="BottomRight" Preset="Custom">
+    <uia:DisplayMessage Handle="{x:Null}" BackColor="Green" DisplayName="Display Message - Outlook" FontSize="17" ForeColor="white" Hide="7000" sap:VirtualizedContainerService.HintSize="670.4,122.4" sap2010:WorkflowViewState.IdRef="DisplayMessage_1" Message="Parsing Outlook emails and storing attached files." NewStyle="True" Position="BottomRight" Preset="Custom">
       <uia:DisplayMessage.Opacity>
         <InArgument x:TypeArguments="s:Nullable(x:Double)">
           <Literal x:TypeArguments="s:Nullable(x:Double)" Value="0.8" />
         </InArgument>
       </uia:DisplayMessage.Opacity>
     </uia:DisplayMessage>
-    <ui:GetOutlookMailMessages Account="{x:Null}" Filter="{x:Null}" FilterByMessageIds="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Outlook Mails" GetAttachements="False" sap:VirtualizedContainerService.HintSize="670,25" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_1" MailFolder="Inbox\O2C_GoldenDemo" MarkAsRead="False" Messages="[list_emails]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Top="1" />
-    <If Condition="[list_emails.Count&gt;0]" sap:VirtualizedContainerService.HintSize="670,4379" sap2010:WorkflowViewState.IdRef="If_3">
+    <ui:GetOutlookMailMessages Account="{x:Null}" Filter="{x:Null}" FilterByMessageIds="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Outlook Mails" GetAttachements="False" sap:VirtualizedContainerService.HintSize="670.4,24.8" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_1" MailFolder="Inbox\O2C_GoldenDemo" MarkAsRead="False" Messages="[list_emails]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Top="1" />
+    <If Condition="[list_emails.Count&gt;0]" sap:VirtualizedContainerService.HintSize="670.4,4382.4" sap2010:WorkflowViewState.IdRef="If_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -167,13 +167,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence sap:VirtualizedContainerService.HintSize="636,4115" sap2010:WorkflowViewState.IdRef="Sequence_4">
+        <Sequence sap:VirtualizedContainerService.HintSize="636.8,4117.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign DisplayName="Assign Email Body" sap:VirtualizedContainerService.HintSize="594,82" sap2010:WorkflowViewState.IdRef="Assign_5">
+          <Assign DisplayName="Assign Email Body" sap:VirtualizedContainerService.HintSize="593.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_5">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[EmailBody]</OutArgument>
             </Assign.To>
@@ -181,7 +181,7 @@
               <InArgument x:TypeArguments="x:String">[list_emails(0).Body.ToString]</InArgument>
             </Assign.Value>
           </Assign>
-          <Assign DisplayName="Assign Email Subject" sap:VirtualizedContainerService.HintSize="594,82" sap2010:WorkflowViewState.IdRef="Assign_6">
+          <Assign DisplayName="Assign Email Subject" sap:VirtualizedContainerService.HintSize="593.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_6">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[EmailSubject]</OutArgument>
             </Assign.To>
@@ -189,7 +189,7 @@
               <InArgument x:TypeArguments="x:String">[list_emails(0).Subject.ToString]</InArgument>
             </Assign.Value>
           </Assign>
-          <Assign DisplayName="Assign Email Sender" sap:VirtualizedContainerService.HintSize="594,82" sap2010:WorkflowViewState.IdRef="Assign_7">
+          <Assign DisplayName="Assign Email Sender" sap:VirtualizedContainerService.HintSize="593.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_7">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[EmailSender]</OutArgument>
             </Assign.To>
@@ -197,7 +197,7 @@
               <InArgument x:TypeArguments="x:String">[list_emails(0).From.Address.ToString]</InArgument>
             </Assign.Value>
           </Assign>
-          <Assign DisplayName="Assign Email Receiver" sap:VirtualizedContainerService.HintSize="594,82" sap2010:WorkflowViewState.IdRef="Assign_8">
+          <Assign DisplayName="Assign Email Receiver" sap:VirtualizedContainerService.HintSize="593.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_8">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[emailReceiver]</OutArgument>
             </Assign.To>
@@ -205,7 +205,7 @@
               <InArgument x:TypeArguments="x:String">[list_emails(0).To(0).Address.ToString]</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:MultipleAssign DisplayName="Format Email Body" sap:VirtualizedContainerService.HintSize="594,194" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+          <ui:MultipleAssign DisplayName="Format Email Body" sap:VirtualizedContainerService.HintSize="593.6,194.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
             <ui:MultipleAssign.AssignOperations>
               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
@@ -243,7 +243,7 @@
               </scg:List>
             </ui:MultipleAssign.AssignOperations>
           </ui:MultipleAssign>
-          <Assign DisplayName="Assign out_bool_hasEmail" sap:VirtualizedContainerService.HintSize="594,82" sap2010:WorkflowViewState.IdRef="Assign_9">
+          <Assign DisplayName="Assign out_bool_hasEmail" sap:VirtualizedContainerService.HintSize="593.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_9">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Boolean">[out_bool_hasEmail]</OutArgument>
             </Assign.To>
@@ -251,14 +251,14 @@
               <InArgument x:TypeArguments="x:Boolean">True</InArgument>
             </Assign.Value>
           </Assign>
-          <Sequence DisplayName="Init Request Templates" sap:VirtualizedContainerService.HintSize="594,825" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="Init Request Templates" sap:VirtualizedContainerService.HintSize="593.6,828.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign DisplayName="Assign Templates" sap:VirtualizedContainerService.HintSize="532,82" sap2010:WorkflowViewState.IdRef="Assign_15">
+            <Assign DisplayName="Assign Templates" sap:VirtualizedContainerService.HintSize="531.2,81.6" sap2010:WorkflowViewState.IdRef="Assign_15">
               <Assign.To>
                 <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[Templates]</OutArgument>
               </Assign.To>
@@ -266,21 +266,21 @@
                 <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[new Dictionary(of String, String)]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each Template" sap:VirtualizedContainerService.HintSize="532,592" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[Directory.GetFiles(Path.Combine(&quot;Data&quot;, &quot;json_templates&quot;), &quot;*.json&quot;)]">
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each Template" sap:VirtualizedContainerService.HintSize="531.2,595.2" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[Directory.GetFiles(Path.Combine(&quot;Data&quot;, &quot;json_templates&quot;), &quot;*.json&quot;)]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="x:String">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:String" Name="template" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,468" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,470.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:PathExists Exists="{x:Null}" DisplayName="Template Path Exists" sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="PathExists_2" Path="[template]" PathType="File" Resource="[templateResource]" />
-                    <ui:ReadTextFile FileName="{x:Null}" Content="[templateStr]" DisplayName="Read Text File - Template" File="[templateResource]" sap:VirtualizedContainerService.HintSize="434,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" />
-                    <Assign DisplayName="Assign Template Name" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_16">
+                    <ui:PathExists Exists="{x:Null}" DisplayName="Template Path Exists" sap:VirtualizedContainerService.HintSize="433.6,116" sap2010:WorkflowViewState.IdRef="PathExists_2" Path="[template]" PathType="File" Resource="[templateResource]" />
+                    <ui:ReadTextFile FileName="{x:Null}" Content="[templateStr]" DisplayName="Read Text File - Template" File="[templateResource]" sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" />
+                    <Assign DisplayName="Assign Template Name" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_16">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[Templates(Path.GetFileNameWithoutExtension(template))]</OutArgument>
                       </Assign.To>
@@ -299,8 +299,8 @@
               </sap:WorkflowViewStateService.ViewState>
             </ui:ForEach>
           </Sequence>
-          <ui:LogMessage DisplayName="Log Message - Run Prediction" sap:VirtualizedContainerService.HintSize="594,141" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Running prediction on email...&quot;]" />
-          <ui:MultipleAssign DisplayName="Multiple Assign Prediction" sap:VirtualizedContainerService.HintSize="594,225" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+          <ui:LogMessage DisplayName="Log Message - Run Prediction" sap:VirtualizedContainerService.HintSize="593.6,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Running prediction on email...&quot;]" />
+          <ui:MultipleAssign DisplayName="Multiple Assign Prediction" sap:VirtualizedContainerService.HintSize="593.6,226.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
             <ui:MultipleAssign.AssignOperations>
               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_10">
@@ -346,8 +346,8 @@
               </scg:List>
             </ui:MultipleAssign.AssignOperations>
           </ui:MultipleAssign>
-          <WriteLine DisplayName="Write Line predict_body" sap:VirtualizedContainerService.HintSize="594,90" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[predict_body]" />
-          <ui:HttpClient ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[predict_body]" BodyFormat="application/json" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" DisplayName="Predict Request oaio2" EnableSSLVerification="True" EndPoint="https://cloud.uipath.com/uipathlabs/DemoRepository/reinfer_/api/v1/datasets/DefaultProject/test/labellers/7/predict" sap:VirtualizedContainerService.HintSize="594,70" sap2010:WorkflowViewState.IdRef="HttpClient_3" Method="POST" Result="[response]" StatusCode="[status_code]" TimeoutMS="20000">
+          <WriteLine DisplayName="Write Line predict_body" sap:VirtualizedContainerService.HintSize="593.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[predict_body]" />
+          <ui:HttpClient ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[predict_body]" BodyFormat="application/json" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" DisplayName="Predict Request oaio2" EnableSSLVerification="True" EndPoint="https://cloud.uipath.com/uipathlabs/DemoRepository/reinfer_/api/v1/datasets/DefaultProject/test/labellers/9/predict" sap:VirtualizedContainerService.HintSize="593.6,71.2" sap2010:WorkflowViewState.IdRef="HttpClient_3" Method="POST" Result="[response]" StatusCode="[status_code]" TimeoutMS="20000">
             <ui:HttpClient.Attachments>
               <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
             </ui:HttpClient.Attachments>
@@ -370,21 +370,21 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:HttpClient>
-          <WriteLine DisplayName="Write Line response" sap:VirtualizedContainerService.HintSize="594,90" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[response]" />
-          <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize response JSON" sap:VirtualizedContainerService.HintSize="594,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[jsonResponse]" JsonString="[response]" />
-          <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each prediction category" sap:VirtualizedContainerService.HintSize="594,1402" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[jsonResponse(&quot;predictions&quot;)]">
+          <WriteLine DisplayName="Write Line response" sap:VirtualizedContainerService.HintSize="593.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[response]" />
+          <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize response JSON" sap:VirtualizedContainerService.HintSize="593.6,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[jsonResponse]" JsonString="[response]" />
+          <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each prediction category" sap:VirtualizedContainerService.HintSize="593.6,1400" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[jsonResponse(&quot;predictions&quot;)]">
             <ui:ForEach.Body>
               <ActivityAction x:TypeArguments="njl:JToken">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="njl:JToken" Name="prediction_category" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,1278" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,1275.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign DisplayName="Assign Consolidated Prediction" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_17">
+                  <Assign DisplayName="Assign Consolidated Prediction" sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_17">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[consolidatedPrediction]</OutArgument>
                     </Assign.To>
@@ -392,7 +392,7 @@
                       <InArgument x:TypeArguments="x:String">[String.Join("&gt;", prediction_category.item(1).Item("name"))]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <Assign DisplayName="Assign Classification" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_18">
+                  <Assign DisplayName="Assign Classification" sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_18">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[classification]</OutArgument>
                     </Assign.To>
@@ -400,9 +400,9 @@
                       <InArgument x:TypeArguments="x:String">[consolidatedPrediction]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <ui:LogMessage DisplayName="Log Message BOT extracted info" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;BOT extracted the Email information&quot;]" />
-                  <ui:SaveMailAttachments Attachments="{x:Null}" DisplayName="Save Email Attachments" ExcludeInlineAttachments="False" FolderPath="[&quot;C:\Users\&quot;+Environment.UserName+&quot;\Downloads&quot;]" sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="SaveMailAttachments_2" Message="[list_emails(0)]" OverwriteExisting="True" />
-                  <Assign DisplayName="Assign Attachment Paths" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_22">
+                  <ui:LogMessage DisplayName="Log Message BOT extracted info" sap:VirtualizedContainerService.HintSize="433.6,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;BOT extracted the Email information&quot;]" />
+                  <ui:SaveMailAttachments Attachments="{x:Null}" DisplayName="Save Email Attachments" ExcludeInlineAttachments="False" FolderPath="[&quot;C:\Users\&quot;+Environment.UserName+&quot;\Downloads&quot;]" sap:VirtualizedContainerService.HintSize="433.6,88" sap2010:WorkflowViewState.IdRef="SaveMailAttachments_2" Message="[list_emails(0)]" OverwriteExisting="True" />
+                  <Assign DisplayName="Assign Attachment Paths" sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_22">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[out_AttachmentFilePath]</OutArgument>
                     </Assign.To>
@@ -410,7 +410,7 @@
                       <InArgument x:TypeArguments="x:String">["C:\Users\"+Environment.UserName+"\Downloads\Order 50030596_ANA_1.pdf"]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <Assign DisplayName="Assign out_bool_hasEmail" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_23">
+                  <Assign DisplayName="Assign out_bool_hasEmail" sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_23">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Boolean">[out_bool_hasEmail]</OutArgument>
                     </Assign.To>

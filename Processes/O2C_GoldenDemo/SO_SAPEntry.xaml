@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1231,8370</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>677.6,8362.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>PO_SAPEntry_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="86">
@@ -122,7 +122,7 @@
       <AssemblyReference>UiPathTeam.Interactive.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="PO_SAPEntry" sap:VirtualizedContainerService.HintSize="688,8305" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="PO_SAPEntry" sap:VirtualizedContainerService.HintSize="688,8297.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="storedPO" />
       <Variable x:TypeArguments="scg:List(snm:MailMessage)" Name="mail" />
@@ -138,28 +138,28 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uia:DisplayMessage Handle="{x:Null}" BackColor="Green" DisplayName="Display Message - BOT started" FontSize="17" ForeColor="white" Hide="7000" sap:VirtualizedContainerService.HintSize="626,124" sap2010:WorkflowViewState.IdRef="DisplayMessage_1" Message="BOT started to add the extracted data from Purchase Order in SAP" NewStyle="True" Position="BottomRight" Preset="Custom">
+    <uia:DisplayMessage Handle="{x:Null}" BackColor="Green" DisplayName="Display Message - BOT started" FontSize="17" ForeColor="white" Hide="7000" sap:VirtualizedContainerService.HintSize="625.6,123.2" sap2010:WorkflowViewState.IdRef="DisplayMessage_1" Message="BOT started to add the extracted data from Purchase Order in SAP" NewStyle="True" Position="BottomRight" Preset="Custom">
       <uia:DisplayMessage.Opacity>
         <InArgument x:TypeArguments="s:Nullable(x:Double)">
           <Literal x:TypeArguments="s:Nullable(x:Double)" Value="0.8" />
         </InArgument>
       </uia:DisplayMessage.Opacity>
     </uia:DisplayMessage>
-    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[SimpleDt]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="626,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Simple Fields" WorkbookPath="[in_currentFile]" />
-    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[ItemDt]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="626,88" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Items" WorkbookPath="[in_currentFile]" />
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[SimpleDt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="626,310" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[SimpleDt]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="625.6,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Simple Fields" WorkbookPath="[in_currentFile]" />
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[ItemDt]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="625.6,88" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Items" WorkbookPath="[in_currentFile]" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[SimpleDt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="625.6,310.4" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_12">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign DisplayName="Assign SoldTo" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign DisplayName="Assign SoldTo" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[SoldTo]</OutArgument>
               </Assign.To>
@@ -171,13 +171,13 @@
         </ActivityAction>
       </ui:ForEachRow.Body>
     </ui:ForEachRow>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Create Sales Documents" sap:VirtualizedContainerService.HintSize="626,7424" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="4f877b49-853f-44c2-aac8-64e052eeffab" Version="V1">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Create Sales Documents" sap:VirtualizedContainerService.HintSize="625.6,7416" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="4f877b49-853f-44c2-aac8-64e052eeffab" Version="V1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,7133" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,7124.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Double" Default="0.03" Name="delay" />
             </Sequence.Variables>
@@ -187,7 +187,7 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Type Into 'CTextField Sales'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="530,218" sap2010:WorkflowViewState.IdRef="NTypeInto_20" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Text="OR" Version="V1">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Type Into 'CTextField Sales'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="529.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_20" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Text="OR" Version="V1">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="358, 325, 104, 39" ElementType="InputBox" FriendlyName="'CTextField Sales'" FullSelectorArgument="&lt;sap id='usr/ctxtVBAK-AUART' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/ctxtVBAK-AUART' /&gt;" Guid="b2e2a3e4-172b-40f5-96d6-94d562f1d262" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGwAAAArCAYAAACdO20ZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAIHSURBVHhe7Zw/S8NAGMbt5uQg+gX8Hg6CfoEiKKiLoODYwUEQF4cOLiKCDgpFLKiLIKIOFvEflCKKoiCW4qZIXZxCp9P37JX02mpyl+Z44fnBQ5uGS+D50eRoe+3wPE8gZkkkEjLN9rUrEGYRp8I6hzNIgJw/vteeK2H+/TbpGc+KgfkjMblyIW6KHw2yKHXCwN+ojhZ372SUMLVtm9lMQQwtHIuu0S3RPbYtlg+eIMwGvSMlLGqKb18imT6V59OlQVgI4hKmSKZz8p3mvzxCWAjiFkbvNLo8pjbzEGaCi47onkYTEQgzwEVHNBGh2SOEGeCiI5o90nkhzAAIY4ZJR1OrV3JcmPROZMX6ybMcD2EWmHREY1Ib+epWMPrnDmUICLMAwpgBYcyAMGZAGDP0jpb2H+SMjl7XoyT5nwcFwiJC78hfbCsgzCEQxgwIYwaEMQPCmAFhzDARNrJ0JseFCT78jQi9oyDCbIEwCyCMGVEL27ksyWPSYysgzAIIYwaEMQPCmAFhzIAwZugd0fdh9JpN+qb3ROGlXD1iIxBmgYuO8MtfC1x0RL+tH/wJhBmgdxTX6pWZtWsIMyFuYbSoj9aH3b9+QpgJcQn7XYGZk+fDCkwLVEc0c6MoYWrbNs3WOFcqldbCkP8Tx78I0D3rtlSuE6VSE4aEjxLWbF+7AmEWiV+YJ74BQ5QJchtsvYgAAAAASUVORK5CYII=" InformativeScreenshot="67ebba51646ea0738c11f67ef5ec65c3.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Sales Documents' /&gt;" SearchSteps="Selector" />
               </uix:NTypeInto.Target>
@@ -198,7 +198,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Type Into 'CTextField Sales'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="530,218" sap2010:WorkflowViewState.IdRef="NTypeInto_21" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Text="1710" Version="V1">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Type Into 'CTextField Sales'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="529.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_21" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Text="1710" Version="V1">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="358, 469, 74, 39" ElementType="InputBox" FriendlyName="'CTextField Sales'" FullSelectorArgument="&lt;sap id='usr/ctxtVBAK-VKORG' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/ctxtVBAK-VKORG' /&gt;" Guid="a5419b5b-d382-41d6-b480-22934ed39a35" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE4AAAArCAYAAADWk770AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAACBSURBVGhD7dCpEYBAAMBA2kdiafQkOAx/9GYmDew0xtj8f3DxA25eVn/4Ek7PgYuBi4GLgYuBi4GLgYuBi4GLgYuBi4GLgYuBi4GLgYuBi4GLgYuBi4GLgYuBi4GLgYuBi4GLgYuBi4GLgYuBi4GLgYuBi4GL3cL5/ROc/w0uPbYdA6LtWXhEm/8AAAAASUVORK5CYII=" InformativeScreenshot="3586d151d0a91b95b12f9f279fee52b8.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Sales Documents' /&gt;" SearchSteps="Selector" />
               </uix:NTypeInto.Target>
@@ -209,7 +209,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Type Into 'CTextField Distribution'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="530,218" sap2010:WorkflowViewState.IdRef="NTypeInto_22" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Text="10" Version="V1">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Type Into 'CTextField Distribution'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="529.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_22" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Text="10" Version="V1">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="358, 517, 44, 39" ElementType="InputBox" FriendlyName="'CTextField Distribution'" FullSelectorArgument="&lt;sap id='usr/ctxtVBAK-VTWEG' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/ctxtVBAK-VTWEG' /&gt;" Guid="c770a0ac-b34a-4085-8bc8-ed5804994827" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAArCAYAAAA+EwvfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAABaSURBVGhD7c8xDQAgFMRQ7DOyYvSPIACYmyNtUgGvVdVK/h9AHzPqKyAlAXQC6ATQCaATQCeATgCdADoBdALoBNAJoBNAJ4BOAJ0AOgF0AuiegKQPQOrhgFoba20wwDZ9JjMAAAAASUVORK5CYII=" InformativeScreenshot="87c09c700f98fa5afa48e8d7dbdcc732.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Sales Documents' /&gt;" SearchSteps="Selector" />
               </uix:NTypeInto.Target>
@@ -220,7 +220,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Type Into 'CTextField Division'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="530,218" sap2010:WorkflowViewState.IdRef="NTypeInto_23" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Text="00" Version="V1">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Type Into 'CTextField Division'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="529.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_23" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Text="00" Version="V1">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="358, 565, 44, 39" ElementType="InputBox" FriendlyName="'CTextField Division'" FullSelectorArgument="&lt;sap id='usr/ctxtVBAK-SPART' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/ctxtVBAK-SPART' /&gt;" Guid="6954c928-60e8-415b-87c8-037c5c3cab68" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAArCAYAAAA+EwvfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAABaSURBVGhD7c8xDQAgFMRQ7DOyYvSPIACYmyNtUgGvVdVK/h9AHzPqKyAlAXQC6ATQCaATQCeATgCdADoBdALoBNAJoBNAJ4BOAJ0AOgF0AuiegKQPQOrhgFoba20wwDZ9JjMAAAAASUVORK5CYII=" InformativeScreenshot="8555f3d293c9de38a1b2741c4b615a8b.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Sales Documents' /&gt;" SearchSteps="Selector" />
               </uix:NTypeInto.Target>
@@ -231,7 +231,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="530,179" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V1">
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="529.6,178.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -239,7 +239,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NKeyboardShortcuts>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Click 'CTextField Sold-To Party'" sap:VirtualizedContainerService.HintSize="530,157" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Version="V1">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Click 'CTextField Sold-To Party'" sap:VirtualizedContainerService.HintSize="529.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Version="V1">
               <uix:NClick.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="283, 277, 164, 39" ElementType="InputBox" FriendlyName="'CTextField Sold-To Party'" FullSelectorArgument="&lt;sap id='usr/subSUBSCREEN_HEADER:SAPMV45A:4021/subPART-SUB:SAPMV45A:4701/ctxtKUAGV-KUNNR' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/subSUBSCREEN_HEADER:SAPMV45A:4021/subPART-SUB:SAPMV45A:4701/ctxtKUAGV-KUNNR' /&gt;" Guid="431f9cbe-81e1-4de7-a855-4b9bc390c263" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKgAAAArCAYAAADsb8PCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAACbSURBVHhe7dKhEYBAEMBA2kdiafTk494APmJ3Jh3kmJklVTOo0u1Bz+uWMn0OCgUGJc2gpBmUNIOSZlDSDEqaQUkzKGkGJc2gpBmUNIOSZlDSDEqaQUkzKGkGJc2gpBmUNIOSZlDSDEqaQUkzKGkGJc2gpBmUNIOSZlDSDEqaQUkzKGkGJc2gpBmUNIOS9juoVOk1qFTMoAo36wGMVSNRPHAFMQAAAABJRU5ErkJggg==" InformativeScreenshot="aecd6c49db2a5d08040cb15079b098de.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Standard Order: Overview' /&gt;" SearchSteps="Selector" />
               </uix:NClick.Target>
@@ -250,7 +250,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Keyboard Shortcuts 'CTextField Sold-To Party'" sap:VirtualizedContainerService.HintSize="530,199" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Shortcuts="[d(hk)][k(f4)][u(hk)]" Version="V1">
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Keyboard Shortcuts 'CTextField Sold-To Party'" sap:VirtualizedContainerService.HintSize="529.6,199.2" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Shortcuts="[d(hk)][k(f4)][u(hk)]" Version="V1">
               <uix:NKeyboardShortcuts.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="283, 277, 164, 39" ElementType="InputBox" FriendlyName="'CTextField Sold-To Party'" FullSelectorArgument="&lt;sap id='usr/subSUBSCREEN_HEADER:SAPMV45A:4021/subPART-SUB:SAPMV45A:4701/ctxtKUAGV-KUNNR' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/subSUBSCREEN_HEADER:SAPMV45A:4021/subPART-SUB:SAPMV45A:4701/ctxtKUAGV-KUNNR' /&gt;" Guid="60447fbb-ec49-4616-aa28-effb79f29bc0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKgAAAArCAYAAADsb8PCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAACbSURBVHhe7dKhEYBAEMBA2kdiafTk494APmJ3Jh3kmJklVTOo0u1Bz+uWMn0OCgUGJc2gpBmUNIOSZlDSDEqaQUkzKGkGJc2gpBmUNIOSZlDSDEqaQUkzKGkGJc2gpBmUNIOSZlDSDEqaQUkzKGkGJc2gpBmUNIOSZlDSDEqaQUkzKGkGJc2gpBmUNIOS9juoVOk1qFTMoAo36wGMVSNRPHAFMQAAAABJRU5ErkJggg==" InformativeScreenshot="bb11c7a5c8c9f8030ed3556d389c01c3.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Standard Order: Overview' /&gt;" SearchSteps="Selector" />
               </uix:NKeyboardShortcuts.Target>
@@ -261,7 +261,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NKeyboardShortcuts>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Type Into 'TextField Selection'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="530,218" sap2010:WorkflowViewState.IdRef="NTypeInto_24" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Text="Bluestar Corp" Version="V1">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Type Into 'TextField Selection'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="529.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_24" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Text="Bluestar Corp" Version="V1">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="405, 450, 390, 38" ElementType="InputBox" FriendlyName="'TextField Selection'" FullSelectorArgument="&lt;sap id='usr/tabsG_SELONETABSTRIP/tabpTAB002/ssubSUBSCR_PRESEL:SAPLSDH4:0220/sub:SAPLSDH4:0220/txtG_SELFLD_TAB-LOW[5,24]' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/tabsG_SELONETABSTRIP/tabpTAB002/ssubSUBSCR_PRESEL:SAPLSDH4:0220/sub:SAPLSDH4:0220/txtG_SELFLD_TAB-LOW[5,24]' /&gt;" Guid="9ddff7cc-54e0-44ed-805d-8c2070bf45f7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAYoAAAAqCAYAAACtFRxKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAENSURBVHhe7ddRSoJRFIVR5z8UQRAKQzDEUIxwEhGE6EOalo8num8XYU/gXws2587g444KAAKhACDqQvF9udb7x6eZmVntD8fWhi4U69ddPS1W7ZqZ2XC32rzV5GHe2nAXiv+KADBsP7+3ms4W7S0UANwRCgAioQAgEgoAIqEAIBIKACKhACASCgAioQAgEgoAIqEAIBIKACKhACASCgAioQAgEgoAIqEAIBIKACKhACASCgAioQAgEgoAIqEAIBIKACKhACASCgAioQAgEgoAIqEAIBIKACKhACASCgAioQAgEgoAohiKx/myXTMzG+6eX7Y1ns5aG7pQfJ3O7UdhZma2PxxbG7pQAECv6g9ly2Szp+UjQwAAAABJRU5ErkJggg==" InformativeScreenshot="6e0bd0e68c8d3be2066ebfe01891b026.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Restrict Value Range' idx='*' /&gt;" SearchSteps="Selector" />
               </uix:NTypeInto.Target>
@@ -272,8 +272,8 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="530,91.2" sap2010:WorkflowViewState.IdRef="Delay_1" />
-            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Keyboard Shortcuts 'TextField Selection'" sap:VirtualizedContainerService.HintSize="530,199.2" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V1">
+            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="529.6,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Keyboard Shortcuts 'TextField Selection'" sap:VirtualizedContainerService.HintSize="529.6,199.2" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V1">
               <uix:NKeyboardShortcuts.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="542, 535, 519, 52" ElementType="InputBox" FriendlyName="'TextField Selection'" FullSelectorArgument="&lt;sap id='usr/tabsG_SELONETABSTRIP/tabpTAB001/ssubSUBSCR_PRESEL:SAPLSDH4:0220/sub:SAPLSDH4:0220/txtG_SELFLD_TAB-LOW[4,24]' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/tabsG_SELONETABSTRIP/tabpTAB001/ssubSUBSCR_PRESEL:SAPLSDH4:0220/sub:SAPLSDH4:0220/txtG_SELFLD_TAB-LOW[4,24]' /&gt;" Guid="375bdfec-d06d-4647-b392-034352a6064b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAgsAAAA4CAYAAABzLrvkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAGaSURBVHhe7da9KgYAHMVhq9hdgCtwA0a7AYsyWq2mdzBIyjWw+BqQUgZCTAbykkk+FqQslCT1J0kpzg28z1NnOVfwaysAgEAsAACRWAAAop9YWNy/rL7GppmZmVn1T27Vxd3TVyP8xML0arO6R5ersXBUE0vHZmZm1qIbntmtrpH5Orl6/GqEX7HQO75Rr2/v3w8A0IrWD2/EAgDwP7EAAERiAQCIxAIAEIkFACASCwBAJBYAgEgsAACRWAAAIrEAAERiAQCIxAIAEIkFACASCwBAJBYAgEgsAACRWAAAIrEAAERiAQCIxAIAEIkFACASCwBAJBYAgEgsAACRWAAAIrEAAERiAQCIxAIAEIkFACASCwBAJBYAgEgsAACRWAAAIrEAAERiAQCIxAIAEIkFACASCwBAJBYAgEgsAACRWAAAIrEAAERiAQCIxAIAEIkFACASCwBAJBYAgCjGQs/YWu2c3tbB+b2ZmZm16KZWmv/HQvvAbHUOzZmZmVkLr2Nw7u9YuH54ru3mrZmZmVntnd3V88vbZyFUfQCkAcPPFT9zugAAAABJRU5ErkJggg==" InformativeScreenshot="b659b726b8b2cd5341a172a60ebbb0f2.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Restrict Value Range' idx='*' /&gt;" SearchSteps="Selector" />
               </uix:NKeyboardShortcuts.Target>
@@ -284,7 +284,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NKeyboardShortcuts>
-            <uix:NClick ActivateBefore="True" ClickType="Double" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Click 'Label SearchTerm'" sap:VirtualizedContainerService.HintSize="530,158" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Version="V1">
+            <uix:NClick ActivateBefore="True" ClickType="Double" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Click 'Label SearchTerm'" sap:VirtualizedContainerService.HintSize="529.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Version="V1">
               <uix:NClick.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="60, 286, 173, 48" ElementType="Text" FriendlyName="'Label SearchTerm'" FullSelectorArgument="&lt;sap id='usr' /&gt;&lt;sap id='usr/lbl[1,3]' /&gt;" FuzzySelectorArgument="&lt;sap id='usr' /&gt;&lt;sap id='usr/lbl[1,3]' /&gt;" Guid="2ceb95d6-7ee9-4417-9159-39077fe7666a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALEAAAA0CAYAAADFVNmuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAADxSURBVHhe7dw7isNAFEVB73/D+rY0dAeeYGYDB+pCBQKHBwUyvM9rFp+ILb9vxGMMSHmeZ7W7Ip4P+76/27ZBxn3fIqZNxOSJmDwRkydi8kRM3jfiGfB8EDE113WtF/BnBvzfD6DgPE8R0yZi8kRMnojJEzF5IiZPxOSJmDwRkydi8kRMnojJEzF5IiZPxOSJmDwRkydi8kRMnojJEzF5IiZPxOSJmDwRkydi8kRMnojJEzF5K+J5GnOeyHTalZrjONZZYke2yZoBryPbIqZKxOSJmDwRkydi8kRMnojJ+xPx/OdjfjyGijHGb8Rm3b3vD5yuNKZ/BVEGAAAAAElFTkSuQmCC" InformativeScreenshot="bb5241b9ba90397345715a81f264a350.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title=' Hit List 1 Entry' idx='*' /&gt;" SearchSteps="Selector" />
               </uix:NClick.Target>
@@ -295,12 +295,12 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="True" DelayBetweenKeys="1" DelayBetweenShortcuts="1" DisplayName="Keyboard Shortcuts 'UserArea usr'" sap:VirtualizedContainerService.HintSize="530,199.2" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_8" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(enter)][u(hk)]" Timeout="7" Version="V3">
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="True" DelayBetweenKeys="1" DelayBetweenShortcuts="1" DisplayName="Keyboard Shortcuts 'UserArea usr'" sap:VirtualizedContainerService.HintSize="529.6,199.2" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_8" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(enter)][u(hk)]" Timeout="7" Version="V3">
               <uix:NKeyboardShortcuts.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="41, 141, 2938, 543" DesignTimeScaleFactor="2.5" ElementType="Container" FriendlyName="'UserArea usr'" FullSelectorArgument="&lt;sap id='usr' /&gt;" FuzzySelectorArgument="&lt;sap id='usr' /&gt;" Guid="98d6af31-ff10-48ef-a0ab-6dd5c808701e" InformativeScreenshot="d90198709bae52db40f5f10b63706c4c.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title=' Hit List 1 Entry' idx='*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
               </uix:NKeyboardShortcuts.Target>
             </uix:NKeyboardShortcuts>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Type Into 'CTextField Ship-to party'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="530,220.8" sap2010:WorkflowViewState.IdRef="NTypeInto_25" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Text="USCU_L05" Version="V1">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Type Into 'CTextField Ship-to party'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="529.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_25" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Text="USCU_L05" Version="V1">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="286, 323, 163, 37" ElementType="InputBox" FriendlyName="'CTextField Ship-to party'" FullSelectorArgument="&lt;sap id='usr/subSUBSCREEN_HEADER:SAPMV45A:4021/subPART-SUB:SAPMV45A:4701/ctxtKUWEV-KUNNR' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/subSUBSCREEN_HEADER:SAPMV45A:4021/subPART-SUB:SAPMV45A:4701/ctxtKUWEV-KUNNR' /&gt;" Guid="8d0db9ae-97bb-4e74-9f3c-a77088816003" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKcAAAApCAYAAABQrDlEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAADiSURBVHhe7dIxSgNRGEbRt//FaAQ1YrQwhWDhGgSxNCqZkQem+HX6Acv3FefA3cFtvfeSEjOnYmvHaSppVPP8vTrmUju/vC1pRGd/3dzvV8dcaj+nU0kjOnx81cX13eqYS61gkOM0m5NM5iSWOYllTmKZk1jmJJY5iWVOYpmTWOYkljmJZU5imZNY5iSWOYllTmKZk1jmJJY5iWVOYpmTWOYkljmJZU5imZNY5iSWOYllTmKZk1jmJJY5iWVOYpmTWP/O+X74LGlEL69vtbnarY651La7h5JG9fj0vDpm771+ASH08fovbpGdAAAAAElFTkSuQmCC" InformativeScreenshot="20346e0d10e87ce030bc25e92efa1485.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Standard Order: Overview' /&gt;" SearchSteps="Selector" />
               </uix:NTypeInto.Target>
@@ -311,9 +311,9 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Type Into 'TextField Customer'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="530,220.8" sap2010:WorkflowViewState.IdRef="NTypeInto_26" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Text="P2304134224" Version="V1">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Type Into 'TextField Customer'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="529.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_26" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Text="P2304134224" Version="V1">
               <uix:NTypeInto.Target>
-                <uix:TargetAnchorable DesignTimeRectangle="286, 371, 342, 38" ElementType="InputBox" FriendlyName="'TextField Customer'" FullSelectorArgument="&lt;sap id='usr/subSUBSCREEN_HEADER:SAPMV45A:4021/txtVBKD-BSTKD' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/subSUBSCREEN_HEADER:SAPMV45A:4021/txtVBKD-BSTKD' /&gt;" Guid="60973e89-ea04-48bc-82e6-f702f14a2a12" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAVoAAAAqCAYAAADyBJMDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAEHSURBVHhe7dQxSgNRGIXR7H8xETJiNCqmCCkssgYJ6SQhMoaBaf5s4GHzvN058DV3AXcxTVNJknI5WkkKtxjHsSRJ/f3ebu2jfXjclCSpr+XwUq8fu/bRzvNckqS+vs+XGp7f20dbAHS7/oyOFiDJ0QKEOVqAMEcLEOZoAcIcLUCYowUIc7QAYY4WIMzRAoQ5WoAwRwsQ5mgBwhwtQJijBQhztABhjhYgzNEChDlagDBHCxDmaAHCHC1AmKMFCHO0AGGOFiDM0QKEOVqAMEcLEOZoAcIcLUCYowUIc7QAYY4WIOzPoz1friVJ6uvreKrV+q19tE+bbUmS+tt/HtpH2xolSf/VVHe3aeE9/UGdgAAAAABJRU5ErkJggg==" InformativeScreenshot="7f4059cc02776e19852657b95c380426.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Standard Order: Overview' /&gt;" SearchSteps="Selector" />
+                <uix:TargetAnchorable DesignTimeRectangle="185, 285, 220, 27" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'TextField Customer'" FullSelectorArgument="&lt;sap id='usr/subSUBSCREEN_HEADER:SAPMV45A:4021/txtVBKD-BSTKD' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/subSUBSCREEN_HEADER:SAPMV45A:4021/txtVBKD-BSTKD' /&gt;" Guid="60973e89-ea04-48bc-82e6-f702f14a2a12" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAVoAAAAqCAYAAADyBJMDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAEHSURBVHhe7dQxSgNRGIXR7H8xETJiNCqmCCkssgYJ6SQhMoaBaf5s4GHzvN058DV3AXcxTVNJknI5WkkKtxjHsSRJ/f3ebu2jfXjclCSpr+XwUq8fu/bRzvNckqS+vs+XGp7f20dbAHS7/oyOFiDJ0QKEOVqAMEcLEOZoAcIcLUCYowUIc7QAYY4WIMzRAoQ5WoAwRwsQ5mgBwhwtQJijBQhztABhjhYgzNEChDlagDBHCxDmaAHCHC1AmKMFCHO0AGGOFiDM0QKEOVqAMEcLEOZoAcIcLUCYowUIc7QAYY4WIOzPoz1friVJ6uvreKrV+q19tE+bbUmS+tt/HtpH2xolSf/VVHe3aeE9/UGdgAAAAABJRU5ErkJggg==" InformativeScreenshot="a03a49d007a9aca7ccb23ca0807fc83c.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Standard Order: Overview' /&gt;" SearchSteps="Selector, FuzzySelector" />
               </uix:NTypeInto.Target>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -322,7 +322,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Type Into 'CTextField Customer'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="530,220.8" sap2010:WorkflowViewState.IdRef="NTypeInto_27" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Text="[DateTime.Now.ToShortDateString]" Version="V1">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Type Into 'CTextField Customer'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="529.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_27" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Text="[DateTime.Now.ToShortDateString]" Version="V1">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="868, 371, 163, 38" ElementType="InputBox" FriendlyName="'CTextField Customer'" FullSelectorArgument="&lt;sap id='usr/subSUBSCREEN_HEADER:SAPMV45A:4021/ctxtVBKD-BSTDK' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/subSUBSCREEN_HEADER:SAPMV45A:4021/ctxtVBKD-BSTDK' /&gt;" Guid="6308b842-7130-43f8-ab4f-4be2c337c27a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKcAAAAqCAYAAADWOEvqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAADzSURBVHhe7dKxSgNRFEXR/P+3KIImYlKoWAQCFpZCiIiIBCUxMAwD07zEzgfp3ynWglPcW+/JMAzFLHHitNhNuq4rZgnr+76O8+L6rlxNF2ZNd3kzL/dPyzrOz69tGcfRrOm23z9ltnis4/x7Qmu734M4ySROYomTWOIkljiJJU5iiZNY4iSWOIklTmKJk1jiJJY4iSVOYomTWOIkljiJJU5iiZNY4iSWOIklTmKJk1jiJJY4iSVOYomTWOIkljiJJU5iiZNY4iSWOIl1Ns7X9VvZ7Q9mTbd5/yiz+UMd5/T0uD0Va9Z6q+eXOs7/h1nOhnIEegV2/SrfWzcAAAAASUVORK5CYII=" InformativeScreenshot="1acfd4c78a3b892b84680be69b204c40.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Standard Order: Overview' /&gt;" SearchSteps="Selector" />
               </uix:NTypeInto.Target>
@@ -333,8 +333,8 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="530,91.2" sap2010:WorkflowViewState.IdRef="Delay_2" />
-            <Assign sap:VirtualizedContainerService.HintSize="530,82.8" sap2010:WorkflowViewState.IdRef="Assign_3">
+            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="529.6,90.4" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            <Assign sap:VirtualizedContainerService.HintSize="529.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_3">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Int32">[RowIndex]</OutArgument>
               </Assign.To>
@@ -342,19 +342,19 @@
                 <InArgument x:TypeArguments="x:Int32">0</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ItemDt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="530,1584.4" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ItemDt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="529.6,1582.4" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,1466.4" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,1464.8" sap2010:WorkflowViewState.IdRef="Sequence_13">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Type Into 'CTextField Material'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,220.8" sap2010:WorkflowViewState.IdRef="NTypeInto_28" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Text="[CurrentRow.Item(&quot;Description&quot;).ToString]" Version="V1">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="[delay]" DelayBefore="[delay]" DisplayName="Type Into 'CTextField Material'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_28" ScopeIdentifier="4f877b49-853f-44c2-aac8-64e052eeffab" Text="[CurrentRow.Item(&quot;Description&quot;).ToString]" Version="V1">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="184, 1087, 605, 37" ElementType="InputBox" FriendlyName="'CTextField Material'" FullSelectorArgument="[string.Format(&quot;&lt;sap colTooltip='Material' id='usr/tabsTAXI_TABSTRIP_OVERVIEW/tabpT\01/ssubSUBSCREEN_BODY:SAPMV45A:4400/subSUBSCREEN_TC:SAPMV45A:4900/tblSAPMV45ATCTRL_U_ERF_AUFTRAG' tableRow='{0}' /&gt;&quot;, RowIndex)]" FuzzySelectorArgument="&lt;sap colTooltip='Material' id='usr/tabsTAXI_TABSTRIP_OVERVIEW/tabpT\01/ssubSUBSCREEN_BODY:SAPMV45A:4400/subSUBSCREEN_TC:SAPMV45A:4900/tblSAPMV45ATCTRL_U_ERF_AUFTRAG' /&gt;" Guid="b26f540c-a1d2-4e73-9186-ec53de32911c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAmEAAAApCAYAAAB9Yf5jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAE1SURBVHhe7dkxaoVQFEVR5z8XGwW/Q7HXSoT/sRIsbggEUpiUj9OsBbvwOoEDrzvPsyRJktSmbdtqHMfHvfv+IUmSpDYty1J93z/u3XVdJUmSpDbt+17TND3uXQEA0Mzn86l5nn++fhlhAAANGWEAAAFGGABAgBEGABBghAEABBhhAAABRhgAQIARBgAQYIQBAAQYYQAAAUYYAECAEQYAEGCEAQAEGGEAAAFGGABAgBEGABBghAEABBhhAAABRhgAQIARBgAQYIQBAAQYYQAAAUYYAECAEQYAEGCEAQAEGGEAAAFGGABAgBEGABBghAEABBhhAAABRhgAQIARBgAQYIQBAAQYYQAAAf+OsPu+S5IkSW06jqNer9fj3r3f75IkSVKb1nWtYRged8+RAAAN/f0cWfUFwEKtlvWITpQAAAAASUVORK5CYII=" InformativeScreenshot="f0efce3548fbe987127f18ab5a409a10.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Standard Order: Overview' /&gt;" SearchSteps="Selector" />
                       </uix:NTypeInto.Target>
